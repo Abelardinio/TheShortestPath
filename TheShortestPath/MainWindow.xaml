@@ -1,0 +1,46 @@
+﻿<Window x:Class="TheShortestPath.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="386" Width="573" >
+    <DockPanel>
+        <Grid>
+            <Button Content="Создать"  Height="37" HorizontalAlignment="Left" Margin="10,141,0,0" Name="createButton" VerticalAlignment="Top" Width="100" Click="СreateButton_Click" />
+
+            <ComboBox   Height="29" HorizontalAlignment="Left" Margin="11,31,0,0" Name="comboBox1" VerticalAlignment="Top" Width="100" SelectedIndex="0">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="15" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="25" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="35" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="45" />
+                <ComboBoxItem Content="50" />
+            </ComboBox>
+            <ComboBox   Height="29" HorizontalAlignment="Left" Margin="10,107,0,0" Name="comboBox2" VerticalAlignment="Top" Width="100" SelectedIndex="0">
+                <ComboBoxItem Content="10" />
+                <ComboBoxItem Content="15" />
+                <ComboBoxItem Content="20" />
+                <ComboBoxItem Content="25" />
+                <ComboBoxItem Content="30" />
+                <ComboBoxItem Content="35" />
+                <ComboBoxItem Content="40" />
+                <ComboBoxItem Content="45" />
+                <ComboBoxItem Content="50" />
+                <ComboBoxItem Content="55" />
+                <ComboBoxItem Content="60" />
+                <ComboBoxItem Content="65" />
+                <ComboBoxItem Content="70" />
+            </ComboBox>
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Размер поля" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="11,65,0,0" TextWrapping="Wrap" Text="Количество припятствий, %" VerticalAlignment="Top" Height="37" Width="90"/>
+        </Grid>
+        <Viewbox>
+            <Grid>
+                <ScrollViewer Margin="92,0,0,0">
+                    <WrapPanel Name="wrapPanel" Background="#FFF2F2F2" />
+                </ScrollViewer>
+            </Grid>
+        </Viewbox>
+    </DockPanel>
+</Window>
